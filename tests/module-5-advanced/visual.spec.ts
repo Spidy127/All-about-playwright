@@ -28,7 +28,7 @@ test.describe('take screen shot ', () => {
     });
 
     test('visual comparison - home should be match', async ({ page }) => {
-        test.skip(!!process.env.Ci, 'Screenshots differ between OS');
+        test.skip(!!process.env.CI, 'Screenshots differ between OS');
 
         await page.goto('https://playwright.dev');
 
